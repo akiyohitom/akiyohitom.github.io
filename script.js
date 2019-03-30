@@ -23,13 +23,8 @@ $(document).ready(function(){
   });
 });
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
@@ -50,4 +45,19 @@ function toggleFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+}
+
+// Open tab information
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
 }

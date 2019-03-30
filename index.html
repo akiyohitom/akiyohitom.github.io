@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -16,77 +17,81 @@
 </head>
 
 <body>
-
 <!-- navbar -->
 	<div class="w3-top">
-	  <div class="w3-bar" id="myNavbar">
-	    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-	      <i class="fa fa-bars"></i>
-	    </a>
-	    <a href="#home" class="w3-bar-item w3-button">Home</a>
-	    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-user-circle"></i> About</a>
-	    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-gamepad"></i> Portfolio</a>
-	  </div>
+		<div class="w3-bar" id="myNavbar">
+			<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+				<i class="fa fa-bars"></i>
+			</a>
+			<a href="#home" class="w3-bar-item w3-button">Home</a>
+			<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-user-circle"></i> About</a>
+			<a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-gamepad"></i> Portfolio</a>
+		</div>
+<!-- Navbar on small screens -->
+		<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+			<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About</a>
+			<a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Portfolio</a>
+		</div>
 	</div>
-
 <!-- first parallax -->	
 	<div id="home"></div>
 	<div class="bgimg-1 w3-display-container w3-opacity-min" id="parallax_1">
 	  <div class="w3-display-middle" style="white-space:nowrap;" id="titletext">
-	    <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ANDREW MORISHITA</div>
+	    <div class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ANDREW</div>
 	    <div class="w3-center w3-padding-large w3-black w3-large w3-wide w3-animate-opacity">SOFTWARE ENGINEER</div>
 	  </div>
 	</div>
-
 <!-- about me -->
 	<div class="w3-content w3-container w3-padding-64" id="about">	
 		<section id="sec_about" class="page_section">
 			<h2>Hello, I am Andrew.</h2>
-			<h5>Welcome to my portfolio, where I show the games and assorted projects I've been working on. I'm a Software Engineer who's had a hand in almost every segment of game development. I'm a Jack of All Trades, Master of None, but I hope to change that. I have passion to learn and am always looking to tackle new challenges.</h5>
-			<br>
+			<h5>Welcome to my portfolio, where you can see the games and assorted projects I've been working on. I'm a Software Engineer that has had a hand in most areas in software development and games, so I am incredibly versatile. I have a constant urge to learn and am always looking to tackle new challenges.</h5>
+			<h5>I have played games since I was 5 years old, and have a growing passion to play and create new experiences that can inspire others as games have done for me.</h5>
 			<h5>Currently the content is small, but as I continue to grow, I hope to fill this portfolio with projects I can be proud to showcase.</h5>
 		</section>
 	</div>
-
 <!-- second parallax -->
 	<div class="bgimg-2 w3-display-container w3-opacity-min" id="parallax_2">
 	  <div class="w3-display-middle">
 	    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
 	  </div>
 	</div>
-
-	<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-		<div class="w3-quarter w3-section">
-			Partners<br>
-			<span class="w3-xlarge">14+</span>
+	<div class="w3-row w3-center w3-dark-grey w3-padding-16 portfolio-tab">
+		<div class="w3-third ">
+			<span class="w3-xlarge">C++</span>
 		</div>
-		<div class="w3-quarter w3-section">
-			Projects Done<br>
-			<span class="w3-xlarge">55+</span>
+		<div class="w3-third">
+			<span class="w3-xlarge">C#</span>
 		</div>
-		<div class="w3-quarter w3-section">
-			Happy Clients<br>
-			<span class="w3-xlarge">89+</span>
-		</div>
-		<div class="w3-quarter w3-section">
-			Meetings<br>
-			<span class="w3-xlarge">150+</span>
+		<div class="w3-third">
+			<span class="w3-xlarge">Rust</span>
 		</div>
 	</div>
-
 <!-- portfolio -->
-	<div class="w3-content w3-container w3-padding-64" id="portfolio">	
-		<section id="sec_portfolio" class="page_section">
-			<h1>These are some of my projects and works.</h1>
-			<br>
-      		<p>I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		</section>
-	</div>
+	<div class="w3-content w3-container" id="portfolio">	
+		<section id="sec_portfolio" class="page_section">		
+			<div class="portfolio-sub-tab">
+				<button class="tablinks" onclick="openTab(event, 'project1')" id="defaultOpen">Project #1</button>
+				<button class="tablinks" onclick="openTab(event, 'project2')">Project #2</button>
+				<button class="tablinks" onclick="openTab(event, 'project3')">Project #3</button>
+			</div>
 
+			<div id="project1" class="tabcontent">
+				<h3>Project #1</h3>
+				<p>Description of project #1.</p>
+			</div>
+
+			<div id="project2" class="tabcontent">
+				<h3>Project #2</h3>
+				<p>Description of project #2.</p>
+			</div>
+
+			<div id="project3" class="tabcontent">
+				<h3>Project #3</h3>
+				<p>Description of project #3.</p>
+			</div>
+		</section> <!-- end of portfolio -->
+	</div>
 	<!-- Footer -->
 	<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
 		<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -97,10 +102,10 @@
 			</div>
 		<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 	</footer>
- 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 
 	</body>
 </html>
