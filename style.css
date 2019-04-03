@@ -3,29 +3,34 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Libre Baskerville', serif;}
 /*html{scroll-behavior: smooth;}*/
 body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
+	height: 100%;
+	color: #777;
+	line-height: 1.8;
 }
+
+#titletext {
+	border: 1px solid #ccc;
+	color: white;						
+}		
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('./assets/background/parallax1.jpg');
-  min-height: 100%;
+	background-image: url('./assets/background/parallax1.jpg');
+	min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("./assets/background/parallax2.jpg");
-  min-height: 400px;
+	background-image: url("./assets/background/parallax2.jpg");
+	min-height: 400px;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -33,56 +38,57 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
+	.bgimg-1, .bgimg-2 {
+		background-attachment: scroll;
+		min-height: 400px;
+	}
 }
 
 /* Style the tab */
-.portfolio-sub-tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+.portfolio-tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #616161;
 }
 
 /* Style the buttons inside the tab */
-.portfolio-sub-tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+.portfolio-tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	color: white;
 }
 
 /* Change background color of buttons on hover */
-.portfolio-sub-tab button:hover {
-  background-color: #ddd;
+.portfolio-tab button:hover {
+	background-color: #757474;	
 }
 
 /* Create an active/current tablink class */
-.portfolio-sub-tab button.active {
-  background-color: #ccc;
+.portfolio-tab button.active {
+	background-color: #4f4e4e;
 }
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
-  padding: 6px 12px;
-  -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 1s;
+	display: none;
+	padding: 6px 12px;
+	-webkit-animation: fadeEffect 1s;
+	animation: fadeEffect 1s;
 }
 
 /* Fade in tabs */
 @-webkit-keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
 
 @keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
