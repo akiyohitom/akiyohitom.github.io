@@ -92,3 +92,28 @@ body, html {
 	from {opacity: 0;}
 	to {opacity: 1;}
 }
+
+/* project panel styling */
+div.project {
+  	float: left;
+	width: 250px; height: 250px;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 25px;
+}
+
+div.project img {
+	width: 100%;
+}
+
+div.project-description {
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* Clearfix (clear floats) */
+.tabcontent::after {
+  content: "";
+  clear: both;
+  display: table;
+}
